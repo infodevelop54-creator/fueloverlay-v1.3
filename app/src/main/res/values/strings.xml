@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Fuel Overlay</string>
+
+    <string name="notif_title">Виджет расхода топлива</string>
+    <string name="notif_text">Отображается поверх других окон</string>
+
+    <string name="flip_to_back">Перевернуть виджет</string>
+    <string name="flip_to_front">Вернуть лицевую сторону</string>
+
+    <string name="btn_refuel_full">Запр.100%</string>
+    <string name="btn_refuel_plus">Заправка +</string>
+    <string name="btn_settings">Настройки</string>
+
+    <string name="dialog_refuel_plus_title">Заправка +</string>
+    <string name="dialog_refuel_full_title">Заправка до полного</string>
+    <string name="dialog_liters">Литры</string>
+    <string name="dialog_price">Цена за литр</string>
+    <string name="dialog_odometer">Одометр, км</string>
+
+    <string name="ok">ок</string>
+    <string name="cancel">отмена</string>
+
+    <string name="menu_journal">Журнал заправок</string>
+    <string name="menu_adaptive">Адаптивный средний расход</string>
+    <string name="menu_gps">Отслеживать пробег по GPS</string>
+    <string name="menu_export">Экспорт БД на внешний носитель…</string>
+    <string name="menu_import">Импорт БД…</string>
+
+    <string name="ic_picker_title">Иконка: выберите вариант</string>
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#CC000000">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <!-- ==================== ЛИЦЕВАЯ СТОРОНА ==================== -->
+        <LinearLayout
+            android:id="@+id/frontSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/icSpent"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="Потрачено" />
+
+                <TextView
+                    android:id="@+id/textSpent"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:text="0.0 л"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/btnFlipToBack"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:background="?android:attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="@string/flip_to_back"
+                    android:scaleType="fitCenter"
+                    android:src="@android:drawable/ic_menu_rotate" />
+
+                <ImageView
+                    android:id="@+id/icRemaining"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="Остаток" />
+
+                <TextView
+                    android:id="@+id/textRemaining"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:gravity="end"
+                    android:text="50.0 л"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:paddingTop="2dp"
+                android:paddingBottom="6dp">
+
+                <ImageView
+                    android:id="@+id/icMileage"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="Пробег" />
+
+                <TextView
+                    android:id="@+id/textMileage"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:text="0.0 км"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+
+                <View
+                    android:layout_width="28dp"
+                    android:layout_height="1dp" />
+
+                <ImageView
+                    android:id="@+id/icRange"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:contentDescription="Остаток пробега" />
+
+                <TextView
+                    android:id="@+id/textRange"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:gravity="end"
+                    android:text="0.0 км"
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/scaleContainer"
+                android:layout_width="260dp"
+                android:layout_height="10dp"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+        <!-- ==================== ОБРАТНАЯ СТОРОНА ==================== -->
+        <LinearLayout
+            android:id="@+id/backSide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/btnRefuelFull"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_refuel_full" />
+
+            <Button
+                android:id="@+id/btnRefuelPlus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/btn_refuel_plus" />
+
+            <Button
+                android:id="@+id/btnOpenSettings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="@string/btn_settings" />
+
+            <ImageButton
+                android:id="@+id/btnFlipToFront"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp"
+                android:background="?android:attr/selectableItemBackgroundBorderless"
+                android:contentDescription="@string/flip_to_front"
+                android:scaleType="fitCenter"
+                android:src="@android:drawable/ic_menu_rotate" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>
